@@ -1,5 +1,6 @@
 
 **After adding @Controller**
+---
 
 @Controller
 
@@ -16,7 +17,7 @@ Now we get another issue: java.lang.NullPointerException: Cannot invoke...becaus
 This is because, even if spring know that PropertyInjectedController is a bean now, it doesn't know
 that it is supposed to be injecting greetingService
 
-<u>Solution:</u>
+**Solution:**
 
 Add **@Autowired** annotation to the property
 This tells spring to go ahead and inject as instance of GreetingService. Of course to
@@ -27,6 +28,7 @@ done by making implementation classes as component class, for that add
 
 
 **Before adding @Controller**
+---
 
 ----------- Property
 
@@ -39,7 +41,7 @@ Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitio
 	at com.tp.di.SpringlDiApplication.main(SpringlDiApplication.java:29)
 	
 	
-<u>Solution:</u>
+**Solution:**
 
 As we can see above that we are getting
 No bean named 'propertyInjectedController' available
