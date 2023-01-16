@@ -1,3 +1,15 @@
+**More than one implementation**
+---
+
+Parameter 0 of constructor in com.tp.di.controllers.ConstructedInjectedController required a single bean, but 2 were found:
+- constructorGreetingService: defined in file ...
+- propertyGreetingService: defined in file ...
+
+
+Action:
+
+Consider marking one of the beans as **@Primary**, updating the consumer to accept multiple beans, or using **@Qualifier** to identify the bean that should be consumed
+
 
 **After adding @Controller**
 ---
