@@ -10,18 +10,18 @@ import com.tp.di.controllers.MyController;
 public class SpringlDiApplication {
 
     public static void main(String[] args) {
-	ApplicationContext context = SpringApplication.run(SpringlDiApplication.class, args); // run method returns a
-											      // context
+        ApplicationContext context = SpringApplication.run(SpringlDiApplication.class, args); // run method returns a
+        // context
 
-	// Now we can ask the context for an instance of my controller
-	// by default spring creates spring bean with id name taken from
-	// class name, but making the first letter small
+        // Now we can ask the context for an instance of my controller
+        // by default spring creates spring bean with id name taken from
+        // class name, but making the first letter small
 
-	MyController myController = (MyController) context.getBean("myController");
+        MyController myController = (MyController) context.getBean("myController");
 
-	String greeting = myController.sayHello();
+        String greeting = myController.sayHello();
 
-	System.out.println(greeting);
+        System.out.println(greeting);
     }
 
 }

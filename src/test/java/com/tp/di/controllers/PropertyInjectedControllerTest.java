@@ -15,7 +15,7 @@ class PropertyInjectedControllerTest {
         // object creation and dependency setting up
         controller = new PropertyInjectedController();
         controller.greetingService = new GreetingServiceImpl();
-// this is one way of dependency injection but we are not going to do that
+        // this is one way of dependency injection but we are not going to do that
         // property injection is not a good idea
         // least preferred way
     }

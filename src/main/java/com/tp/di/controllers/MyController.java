@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 // @Controller is one of stereotype annotations
 public class MyController {
     public String sayHello() {
-	System.out.println("Hello World!");
-	return "Hello Spring";
+        System.out.println("Hello World!");
+        return "Hello Spring";
     }
 }
