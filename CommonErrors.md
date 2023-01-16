@@ -32,7 +32,7 @@ Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitio
 	at com.tp.di.SpringlDiApplication.main(SpringlDiApplication.java:29)
 	
 	
-Solution:
+_Solution:
 
 As we can see above that we are getting 
 
