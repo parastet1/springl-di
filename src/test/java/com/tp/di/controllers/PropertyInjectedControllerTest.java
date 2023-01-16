@@ -1,6 +1,6 @@
 package com.tp.di.controllers;
 
-import com.tp.di.services.GreetingServiceImpl;
+import com.tp.di.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +14,7 @@ class PropertyInjectedControllerTest {
         // mimicing the spring framework
         // object creation and dependency setting up
         controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingServiceImpl();
         // this is one way of dependency injection but we are not going to do that
         // property injection is not a good idea
         // least preferred way
