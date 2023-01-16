@@ -1,5 +1,6 @@
 package com.tp.di;
 
+import com.tp.di.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -22,6 +23,11 @@ public class SpringlDiApplication {
         String greeting = myController.sayHello();
 
         System.out.println(greeting);
+
+        System.out.println("----------- Property ");
+
+        PropertyInjectedController propertyInjectedController = (PropertyInjectedController) context.getBean("propertyInjectedController");
+        System.out.println(propertyInjectedController.getGreeting());
     }
 
 }
