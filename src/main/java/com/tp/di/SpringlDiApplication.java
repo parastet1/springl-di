@@ -1,12 +1,12 @@
 package com.tp.di;
 
+import com.tp.di.controllers.ConstructedInjectedController;
+import com.tp.di.controllers.MyController;
 import com.tp.di.controllers.PropertyInjectedController;
 import com.tp.di.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-
-import com.tp.di.controllers.MyController;
 
 @SpringBootApplication
 public class SpringlDiApplication {
@@ -31,8 +31,12 @@ public class SpringlDiApplication {
         System.out.println(propertyInjectedController.getGreeting());
 
         System.out.println("---- Setter");
-        SetterInjectedController setterInjectedController  = (SetterInjectedController) context.getBean("setterInjectedController");
+        SetterInjectedController setterInjectedController = (SetterInjectedController) context.getBean("setterInjectedController");
         System.out.println(setterInjectedController.getGreeting());
+
+        System.out.println("---- Constructor");
+        ConstructedInjectedController constructedInjectedController = (ConstructedInjectedController) context.getBean("constructedInjectedController");
+        System.out.println(constructedInjectedController.getGreeting());
     }
 
 }
