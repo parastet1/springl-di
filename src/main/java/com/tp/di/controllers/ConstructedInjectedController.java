@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class ConstructedInjectedController {
     private final GreetingService greetingService;
 
-    @Autowired
+    @Autowired // this is optional for constructor injection, spring 4.2 probably
     public ConstructedInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
