@@ -1,5 +1,5 @@
 
-*After adding @Controller*
+**After adding @Controller**
 
 @Controller
 
@@ -19,7 +19,7 @@ This is because, even if spring know that PropertyInjectedController is a bean n
 that it is supposed to be injecting greetingService
 
 
-*Before adding @Controller*
+**Before adding @Controller**
 
 ----------- Property
 
